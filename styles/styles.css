@@ -1,0 +1,231 @@
+/************* your name: Jincheng Lei
+
+INSTRUCTIONS:
+Comments starting with TO-DO have been included in this file to describe the needed styling: please translate these to the appropriate CSS declarations. 
+
+Comments starting with TO-DO may be left in for reference or removed entirely: all other comments should be left as-is for ease of review.
+
+You are discouraged from changing any provided CSS.
+
+***** colour palette: *****
+- mustard yellow (used for header, footer, and buttons): #E5AF42
+- cornflower blue (used for hover states): #4278e5
+
+*/
+
+
+/************* site defaults *************/
+body {
+    width: 950px;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+}
+
+.flex {
+    display: flex;
+}
+
+/************* site-wide text styling *************/
+
+h1 {
+    font-size: 48px;
+    text-align: center;
+    align-self: center;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+.large-text {
+    font-size: 24px;
+}
+
+.fake-button {
+    background-color: #e5af42;
+    text-align: center;
+    line-height: 3;
+    border: 1px solid black;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+main a:hover,
+footer a:hover {
+    text-decoration: underline;
+}
+
+.fake-button:hover,
+.blue-hover:hover {
+    text-decoration: underline;
+    background-color: #4278e5;
+    color: white;
+    cursor: pointer;
+}
+
+/************* header/footer styling *************/
+
+header,
+footer {
+    background-color: #e5af42;
+}
+
+header {
+    height: 150px;
+}
+
+header img {
+    width: 100px;
+    height: 100px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 25px;
+}
+
+header h1 {
+    flex-grow: 1;
+}
+
+header {
+    margin-bottom: 25px;
+}
+
+main {
+    margin-bottom: 50px;
+}
+
+footer {
+    height: 60px;
+    font-weight: 200;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/************* index page *************/
+
+.about-us {
+    flex-grow: 1;
+}
+
+.index img {
+    width: 300px;
+    margin-left: 25px;
+    margin-bottom: 50px;
+}
+
+.index h2 {
+    line-height: 36px;
+}
+
+.index p {
+    margin-bottom: 12px;
+}
+
+.index .fake-button {
+    width: 250px;
+}
+
+.index .buttons {
+    column-gap: 150px;
+    justify-content: center;
+}
+
+/************* bookings page *************/
+
+.booking-page {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.booking-page p:not(.large-text) {
+    font-size: 18px;
+}
+
+.day-selector {
+    margin-bottom: 12px;
+    column-gap: 20px;
+}
+
+.day-selector li {
+    width: 60px;
+    text-align: center;
+}
+
+.day-selector li,
+.small-button {
+    border: 1px solid black;
+}
+
+.small-button {
+    padding: 5px;
+}
+
+.top-margin {
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+
+#clear-button {
+    width: 200px;
+}
+
+.clicked {
+    background-color: #e5af42;
+}
+
+/************* contact page *************/
+
+.contact {
+    height: 420px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.contact form label {
+    width: 150px;
+    text-align: right;
+}
+
+.contact form input,
+.contact form textarea {
+    width: 300px;
+}
+
+.contact .flex {
+    column-gap: 24px;
+}
+
+.contact textarea {
+    height: 150px;
+}
+
+/* The button seems more likely to have light-height of `3` instead of `24px` based on screenshot */
+.contact form input,
+.contact form textarea {
+    line-height: 24px;
+}
+
+.contact form input,
+.contact form textarea,
+.contact form button {
+    font-size: 16px;
+    border: 1px solid black;
+    margin-bottom: 24px;
+}
+
+.contact form button {
+    width: 306px;
+    margin-left: 174px;
+}
